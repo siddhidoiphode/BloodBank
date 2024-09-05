@@ -1,16 +1,10 @@
 
 {
-    "Builds": [{
-    "src":"Bloodbank/wsgi.py",
-    "use":"@vercel/python",
-    "config":{ "mazLambdaSize" : "15mb" , "runtime" : "python3.9"}
-    }],
-    "routes" : [{
-       
-    "src" : "/(.*)",
-    "dest" : "Bloodbank/wsgi.py"       
-    }]
-
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ]
 }
-
-
